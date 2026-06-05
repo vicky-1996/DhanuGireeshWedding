@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#17100d">
+    <meta name="description" content="Wedding invitation for Dhanusree & Girish on September 13, 2026 at Souparnika Auditorium, Kudassanadu.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dhanusree & Girish Wedding Invitation">
+    <meta property="og:description" content="Join us on September 13, 2026 at Souparnika Auditorium, Kudassanadu.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Dhanusree & Girish | Wedding Invitation</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <link rel="preload" href="assets/hero-cover.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to invitation</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="ambient" aria-hidden="true">
+      <div class="light-ray ray-one"></div>
+      <div class="light-ray ray-two"></div>
+      <div class="petal-field" id="petalField"></div>
+    </div>
+
+    <section class="opening" id="opening" aria-label="Opening invitation cover">
+      <div class="opening__image" aria-hidden="true"></div>
+      <div class="opening__grain" aria-hidden="true"></div>
+      <div class="opening__content">
+        <div class="monogram monogram--hero" data-config="initials">D&G</div>
+        <p class="kicker">Wedding Invitation</p>
+        <h1><span data-config="bride">Dhanusree</span> <em>&</em> <span data-config="groom">Girish</span></h1>
+        <p class="opening__date" data-config="dateDisplay">September 13, 2026</p>
+        <button class="open-button" id="openInvitation" type="button" aria-label="Open wedding invitation">
+          <span class="open-button__halo"></span>
+          <span>Tap to Open</span>
+        </button>
+      </div>
+      <div class="envelope" aria-hidden="true">
+        <div class="envelope__flap"></div>
+        <div class="envelope__body"></div>
+      </div>
+    </section>
+
+    <audio id="bgMusic" preload="metadata" loop></audio>
+
+    <div class="shell" id="siteShell" aria-hidden="true">
+      <header class="topbar" aria-label="Invitation controls">
+        <a href="#welcome" class="brand-mark">
+          <span class="monogram">D&G</span>
+          <span data-config="coupleNames">Dhanusree & Girish</span>
+        </a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="#story">Story</a>
+          <a href="#date">Date</a>
+          <a href="#venue">Venue</a>
+          <a href="#rsvp">RSVP</a>
+        </nav>
+        <div class="top-actions">
+          <button class="icon-button" id="shareInvite" type="button" aria-label="Share invitation" title="Share invitation">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.83-4H15a3 3 0 0 0 1.17 2.36L8.9 10.1a3 3 0 1 0 0 3.8l7.27 3.74A3 3 0 1 0 17 16.1L9.72 12.36a3.1 3.1 0 0 0 0-.72L17 7.9c.31.08.64.1 1 .1Z"/></svg>
+          </button>
+          <button class="icon-button" id="musicToggle" type="button" aria-label="Mute music" title="Mute music">
+            <svg class="sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5 3a4.5 4.5 0 0 0-2.2-3.86v7.72A4.5 4.5 0 0 0 16.5 12Zm0-8.5v2.08A8 8 0 0 1 20 12a8 8 0 0 1-3.5 6.42v2.08A10 10 0 0 0 22 12a10 10 0 0 0-5.5-8.5Z"/></svg>
+            <svg class="sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm15.78 1.28-1.42-1.42L16.5 10.45l-1.86-1.86-1.42 1.42L15.1 11.9l-1.9 1.9 1.42 1.42 1.9-1.9 1.86 1.86 1.42-1.42-1.88-1.88 1.86-1.6Z"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero-panel section" id="welcome">
+          <div class="hero-panel__media parallax-media">
+            <picture>
+              <source media="(max-width: 720px)" srcset="assets/couple-window-720.jpg">
+              <img src="assets/couple-window-1200.jpg" alt="Dhanusree and Girish smiling together" loading="eager">
+            </picture>
+          </div>
+          <div class="hero-panel__copy reveal">
+            <p class="eyebrow" data-config="welcomeEyebrow">The Wedding Invitation</p>
+            <h2 data-config="welcomeTitle">A celebration wrapped in grace</h2>
+            <p class="quote" data-config="quote">Two hearts, one promise, and a lifetime written in gold.</p>
+            <p data-config="welcomeBody">You are warmly invited to witness the Muhurtham of Dhanusree and Girish.</p>
+            <p class="signature" data-config="handwritten">With love, laughter, and the blessings of family.</p>
+          </div>
+        </section>
+
+        <section class="section couple-section" id="couple">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The Couple</p>
+            <h2><span data-config="bride">Dhanusree</span> <em>&</em> <span data-config="groom">Girish</span></h2>
+            <p data-config="coupleNote">Their story carries the sparkle of friendship and the calm of trust.</p>
+          </div>
+          <div class="portrait-grid">
+            <article class="portrait-card reveal">
+              <img src="assets/couple-window-720.jpg" alt="Portrait of Dhanusree and Girish" loading="lazy">
+              <div>
+                <span>Bride</span>
+                <h3 data-config="bride">Dhanusree</h3>
+                <p data-config="brideLine">Elegant, radiant, and full of quiet strength.</p>
+              </div>
+            </article>
+            <article class="portrait-card portrait-card--offset reveal">
+              <img src="assets/couple-ceremony-720.jpg" alt="Engagement portrait of Dhanusree and Girish" loading="lazy">
+              <div>
+                <span>Groom</span>
+                <h3 data-config="groom">Girish</h3>
+                <p data-config="groomLine">Warm-hearted, steady, and endlessly joyful.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section journey-section" id="story">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Our Journey</p>
+            <h2>From hello to forever</h2>
+          </div>
+          <div class="journey-track" id="journeyTrack" aria-label="Journey timeline"></div>
+        </section>
+
+        <section class="section love-story" id="love">
+          <div class="love-story__sticky reveal">
+            <p class="eyebrow">Love Story</p>
+            <h2>A quiet kind of magic</h2>
+          </div>
+          <div class="story-copy" id="loveStory"></div>
+        </section>
+
+        <section class="section scratch-section" id="date">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Reveal The Date</p>
+            <h2>Scratch the gold foil</h2>
+            <p>Beneath the foil waits the wedding morning.</p>
+          </div>
+          <div class="scratch-card reveal" id="scratchCard">
+            <div class="scratch-card__reveal">
+              <span>Wedding Day</span>
+              <strong data-config="dateDisplay">September 13, 2026</strong>
+              <em data-config="timeDisplay">10:00 AM</em>
+            </div>
+            <canvas id="scratchCanvas" aria-label="Scratch card covering the wedding date"></canvas>
+          </div>
+        </section>
+
+        <section class="section countdown-section" id="countdown">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Countdown</p>
+            <h2>Until the sacred morning</h2>
+          </div>
+          <div class="countdown-grid reveal" id="countdownGrid" aria-live="polite"></div>
+        </section>
+
+        <section class="section gallery-section" id="gallery">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Gallery</p>
+            <h2>Cinematic moments</h2>
+          </div>
+          <div class="gallery-actions reveal">
+            <button class="text-button" id="slideshowToggle" type="button">Auto Slideshow</button>
+          </div>
+          <div class="masonry" id="galleryGrid"></div>
+        </section>
+
+        <section class="section blessings-section" id="blessings">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Blessings Wall</p>
+            <h2>Leave a wish</h2>
+          </div>
+          <form class="wish-form reveal" id="wishForm">
+            <label>
+              <span>Your name</span>
+              <input name="name" autocomplete="name" required placeholder="Guest name">
+            </label>
+            <label>
+              <span>Your blessing</span>
+              <textarea name="message" rows="4" required placeholder="Write your wish for the couple"></textarea>
+            </label>
+            <button class="primary-button" type="submit">Send Blessing</button>
+          </form>
+          <div class="wish-toolbar reveal">
+            <button class="text-button" id="moderationToggle" type="button">Moderate</button>
+          </div>
+          <div class="wishes" id="wishesList"></div>
+          <div class="moderation-panel" id="moderationPanel" hidden>
+            <label>
+              <span>Passcode</span>
+              <input id="moderationPasscode" type="password" placeholder="Enter passcode">
+            </label>
+            <button class="primary-button" id="unlockModeration" type="button">Unlock</button>
+            <div id="moderationList"></div>
+          </div>
+        </section>
+
+        <section class="section family-section" id="family">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Families</p>
+            <h2>With every blessing</h2>
+          </div>
+          <div class="family-grid" id="familyGrid"></div>
+        </section>
+
+        <section class="section schedule-section" id="schedule">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Event Schedule</p>
+            <h2>The wedding morning</h2>
+          </div>
+          <div class="schedule-list" id="scheduleList"></div>
+        </section>
+
+        <section class="section venue-section" id="venue">
+          <div class="venue-banner reveal">
+            <img src="assets/venue-banner.jpg" alt="Cinematic wedding venue banner" loading="lazy">
+            <div>
+              <p class="eyebrow">Venue</p>
+              <h2 data-config="venue">Souparnika Auditorium</h2>
+              <p data-config="place">Kudassanadu</p>
+            </div>
+          </div>
+          <div class="venue-grid">
+            <div class="venue-card reveal">
+              <h3>Arrive in comfort</h3>
+              <p><strong data-config="venue">Souparnika Auditorium</strong>, <span data-config="place">Kudassanadu</span></p>
+              <div class="action-row">
+                <a class="primary-button" id="mapButton" href="https://maps.app.goo.gl/HUKwCNs2AE4g1xUs8" target="_blank" rel="noreferrer">Navigate</a>
+                <button class="text-button" id="calendarButton" type="button">Add to Calendar</button>
+              </div>
+              <ul class="travel-tips" id="travelTips"></ul>
+            </div>
+            <div class="map-frame reveal">
+              <iframe id="mapEmbed" title="Google map for Souparnika Auditorium" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="section dress-section" id="dress">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Dress Code</p>
+            <h2>Soft festive elegance</h2>
+          </div>
+          <div class="palette" id="palette"></div>
+        </section>
+
+        <section class="section rsvp-section" id="rsvp">
+          <div class="section-heading reveal">
+            <p class="eyebrow">RSVP</p>
+            <h2>Reserve your blessing</h2>
+          </div>
+          <form class="rsvp-form reveal" id="rsvpForm">
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required placeholder="Your name">
+            </label>
+            <label>
+              <span>Guests</span>
+              <input name="guests" type="number" min="1" max="20" value="1" required>
+            </label>
+            <label>
+              <span>Attendance</span>
+              <select name="attendance" required>
+                <option value="Attending">Attending</option>
+                <option value="Maybe">Maybe</option>
+                <option value="Unable to attend">Unable to attend</option>
+              </select>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="3" placeholder="Any note for the families"></textarea>
+            </label>
+            <div class="action-row">
+              <button class="primary-button" type="submit">Save RSVP</button>
+              <a class="text-button" id="whatsappRsvp" target="_blank" rel="noreferrer">WhatsApp RSVP</a>
+              <a class="text-button" id="callButton">Call</a>
+            </div>
+            <p class="form-note" id="rsvpStatus" role="status"></p>
+          </form>
+        </section>
+
+        <section class="section card-section" id="card">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Digital Card</p>
+            <h2>Traditional invitation</h2>
+          </div>
+          <div class="digital-card reveal" id="digitalCard">
+            <div class="monogram">D&G</div>
+            <p>With the blessings of our families</p>
+            <h3><span data-config="bride">Dhanusree</span> <em>&</em> <span data-config="groom">Girish</span></h3>
+            <p>request the pleasure of your presence</p>
+            <strong data-config="dateDisplay">September 13, 2026</strong>
+            <span><span data-config="timeDisplay">10:00 AM</span> | <span data-config="venue">Souparnika Auditorium</span></span>
+          </div>
+          <div class="action-row centered reveal">
+            <button class="primary-button" id="downloadCard" type="button">Download Card</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog" aria-label="Gallery viewer">
+      <button class="icon-button lightbox__close" id="lightboxClose" type="button" aria-label="Close gallery">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+      </button>
+      <button class="icon-button lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+      </button>
+      <figure>
+        <img id="lightboxImage" alt="">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="icon-button lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Next image">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+  </body>
+</html>
